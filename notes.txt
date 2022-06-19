@@ -1,0 +1,54 @@
+openssl rsa -in key.pem -pubout -out pubkey.pem
+
+CEP47 Deploy output:
+
+> e2e:cep47:install
+> ts-node ./e2e/cep47/install.ts
+
+... Contract installation deployHash: b151badbdcf37b3b19af9b9ecfc9ad6d8bb2108807b4290ab4fa4f4c807dc083
+... Contract installed successfully.
+... Account Info:
+{
+  "_accountHash": "account-hash-9213801c105b757b8dda450090c40541edcbe95db6d7f3b6b4cbb1656d5f0a9d",
+  "namedKeys": [
+    {
+      "name": "compute_access_uref",
+      "key": "uref-e49343db9cfa475112d2b293d38093a5ce75d151d29b22849abc9fa176736c58-007"
+    },
+    {
+      "name": "compute_contract_hash",
+      "key": "hash-ea4e62c02441efc9b34f3e39456f512117bc52038c59705ccbad418bb085a0a0"
+    },
+    {
+      "name": "compute_package_hash",
+      "key": "hash-8525a92348e50238e71a29b97539ea8b376a3e2043e7b276e23db2efae719834"
+    },
+    {
+      "name": "contract_package_hash",
+      "key": "hash-9894dbbec18c2902bc08fdca09981f1dc2464a2d9b5971a74942f1cc38fe36da"
+    },
+    {
+      "name": "my_contract_contract_hash",
+      "key": "hash-989184bbbfdb6a213e4b2586cfa87d6a92e1ecff8fbf5a8b69b95086125fc9d8"
+    },
+    {
+      "name": "my_contract_contract_hash_wrapped",
+      "key": "uref-2f5f357f397b87bf6e84a90f16ee84773e0ab926dbfcd0cb7b58b42df3be0632-007"
+    }
+  ],
+  "mainPurse": "uref-da11fc5df0a4a446c6b50af7a2d74f572311c5f0b47a7188a68b9f44aa4d42f0-007",
+  "associatedKeys": [
+    {
+      "accountHash": "account-hash-9213801c105b757b8dda450090c40541edcbe95db6d7f3b6b4cbb1656d5f0a9d",
+      "weight": 1
+    }
+  ],
+  "actionThresholds": {
+    "deployment": 1,
+    "keyManagement": 1
+  }
+}
+... Contract Hash: hash-989184bbbfdb6a213e4b2586cfa87d6a92e1ecff8fbf5a8b69b95086125fc9d8
+
+
+npm run usage

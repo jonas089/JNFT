@@ -1,0 +1,23 @@
+{
+  "name": "casper-contracts",
+  "description": "casper-contracts-js-clients",
+  "private": true,
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "lerna": "^4.0.0",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "usage": "ts-node ./usage.ts"
+  },
+  "keywords": [],
+  "author": "jonas pauli",
+  "license": "",
+  "dependencies": {
+    "casper-js-sdk": "2.9.1",
+    "ts-node": "^10.2.1",
+    "casper-js-client-helper": "file:./packages/client-helper",
+    "casper-cep47-js-client": "file:./packages/cep47-client",
+    "casper-erc20-js-client": "file:./packages/erc20-client"
+  }
+}
